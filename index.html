@@ -1,524 +1,590 @@
-body{
-    font-family:'Raleway', sans-serif;
-    
-}
-/* header */
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 85%;
-    margin: auto;
-    scroll-behavior: smooth;
-}
-
-
-header img {
-    width: 50%;
-    margin-top: 12%;
-}
-
-header nav ul {
-    display: flex;
-    list-style-type: none;
-}
-
-header nav ul li a{
-    color: black;
-    text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 25px;
-    font-weight: 500;
-}
-
-header nav ul li a:hover{
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
-}
-
-/* Main */
-main{
-    width: 90%;
-    margin: auto;
-}
-
-/* Section 1 */
-section h1{
-    font-size: 24px;
-}
-
-.left{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.icons{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 50px;
-    border-radius: 10px 0 0 10px;
-    background-color: #f2f2f2;
-}
-
-.searchzone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    padding-left: 20px;
-    height: 50px;
-    width: 230px;
-    font-size: 18px;
-    color:black;
-    font-weight: bold;
-    border-top: 1px solid #f2f2f2;
-    border-bottom: 1px solid #f2f2f2;
-    
-
-}
-.searchzone::placeholder { 
-    color: black;
-  }
-
-.button-search{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0065FC;
-    color: white;
-    height: 50px;
-    width: 120px;
-    cursor: pointer;
-    border-radius: 0 10px 10px 0;
-
-}
-.button-search:hover{
-   color: #0065fc;
-   background-color: #f2f2f2;
-}
-
-
-/* Section 2 */
-section h3{
-    margin-right: 20px;
-}
-
-
-/* filtres */
-.filtres{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 2%;
-    margin-right: 20%;
-}
-
-.filtre{
-    border: 4px solid #f2f2f2;
-    border-radius: 30px;
-    display: flex;
-    padding: 10px 0px 10px 0px ;
-    margin-right: 20px;
-    align-items: center;
-    height: 15px;
-    padding-right: 20px;
-    cursor: pointer;
-}
-
-.filtre:hover{
-    color: white;
-    background-color: #0065FC;
-    border: 4px solid #0065FC;
-}
-
-.filtre i{
-    font-style: normal;
-} 
-
-.filtre-icons{
-    /* height: 50px; */
-    height: 20px;
-    padding: 10px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: #0065fc;
-    background-color: #deebff;
-    border-radius: 25px;
-    margin-left: -5px;
-    width: 20px;
-}
-.filtre-icons:hover{
-    color: white;
-    background-color: #0065fc;
-}
-
-.infoicons{
-    color: #0065FC;
-    width: 22px;
-    height: 22px;
-    border: 2px solid #f2f2f2;
-    border-radius: 25px;
-    margin-right: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.info{
-    display: flex;
-    align-items: center;    
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-/* Hebergements a Marseille et les plus populaires */
-
-.hebergements-marseille-les-plus-populaires{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.hebergements-marseille-les-plus-populaires-card{
-    display: flex;
-    flex-direction: column;
-    background-color: #f2f2f2;
-    padding: 2%;
-    border-radius: 20px;
-    justify-content: space-between;
-}
-
-.hebergements-marseille-les-plus-populaires-card  h2{
-    font-size: 20px;
-    margin-block-start: 5px;
-    margin-block-end: 5px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-/* Hebergements a Marseille */
-
-.hebergements-marseille{
-    width: 65%;
-}
-
-.hebergements-marseille-cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 3%;
-}
-
-.hebergements-marseille-card{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    padding: 1%;
-    border-radius: 20px;
-    margin-bottom: 3%;
-}
-
-.hebergements-marseille-card-img img{
-    width: 100%;
-    height: 130px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.hebergements-marseille-card-details h3{
-    font-size: 18px;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-.hebergements-marseille-card-details p{
-    font-size: 16px;
-    margin-block-start: 8px;
-    margin-block-end: 8px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-.hebergements-marseille-card-devise, .hebergements-marseille-card-price{
-    font-weight: bold;
-}
-
-
-/*etoiles*/
-.colorblue{
-color: #0065FC;
-}
-.colorgrey{
-color: #deebff;
-}
-/* Afficher plus */
-.Afficher-plus{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-}
-/* Les plus populaires */
-.les-plus-populaires{
-    width: 25%;
-}
-.les-plus-populaires h2{
-    display: flex;
-    justify-content: space-between;
-}
-.les-plus-populaires-cards{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 3%;
-}
-
-.les-plus-populaires-card{
-    display: flex;
-    width: 100%;
-    height: 170px;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    padding: 1%;
-    border-radius: 20px;
-}
-
-.les-plus-populaires-card-img img{
-    width: 160px;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px 0px 0px 20px;
-}
-
-.les-plus-populaires-card-details{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: auto;
-    margin-left: 20px;
-}
-
-.les-plus-populaires-card-details h3{
-    font-size: 18px;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    padding-top: 15px;
-}
-
-.les-plus-populaires-card-details p{
-    font-size: 16px;
-    margin-block-start: 8px;
-    margin-block-end: 8px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-.les-plus-populaires-card-ranks{
-    padding-top: 20%;
-}
-
-.les-plus-populaires-card-devise{
-    font-weight: bold;
-}
-
-
-/* Activités */
-.activites-marseille{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.colonne-activite-marseille{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    width: 22%;
-    height: 500px;
-}
-
-.activite-marseille-card-row-1{
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    box-shadow: 2px 2px 2px 2px #f2f2f2;
-    border-radius: 25px;
-}
-
-.activite-marseille-card-row-1 .activite-marseille-card-img{
-    width: 100%;
-    height: 90%;
-}
-
-.activite-marseille-card-row-1 .activite-marseille-card-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 25px 25px 0px 0px;
-}
-
-.activite-marseille-card-row-1 .activite-marseille-card-details{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 10%;
-    margin-left: 5%;
-}
-
-.activite-marseille-card-row-1 .activite-marseille-card-details h3{
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-}
-
-.activite-marseille-card-row-2{
-    width: 100%;
-    height: 280px;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    box-shadow: 2px 2px 2px 2px #f2f2f2;
-    border-radius: 25px;
-}
-
-.activite-marseille-card-row-2 .activite-marseille-card-img{
-    width: 100%;
-    height: 230px;
-}
-
-.activite-marseille-card-row-2 .activite-marseille-card-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 25px 25px 0px 0px;
-}
-
-.activite-marseille-card-row-2 .activite-marseille-card-details{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 50px;
-    margin-left: 5%;
-}
-
-.activite-marseille-card-row-2 .activite-marseille-card-details h3{
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-}
-
-
-.activite-marseille-card-row-3{
-    width: 100%;
-    height: 180px;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    box-shadow: 2px 2px 2px 2px #f2f2f2;
-    border-radius: 25px;
-}
-
-.activite-marseille-card-row-3 .activite-marseille-card-img{
-    width: 100%;
-    height: 130px;
-}
-
-.activite-marseille-card-row-3 .activite-marseille-card-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 25px 25px 0px 0px;
-}
-
-.activite-marseille-card-row-3 .activite-marseille-card-details{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 50px;
-    margin-left: 5%;
-}
-
-.activite-marseille-card-row-3 .activite-marseille-card-details h3{
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-}
-
-/* footer */
-.footer{
-    background-color: #f2f2f2;
-}
-
-.footer-lien{
-    text-decoration: none;
-    color:grey;    
-}
-.footer-liens{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    
-}
-
-
-.footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 300px;
-    margin-top: 100px;
-    background-color: #f2f2f2;
-}
-
-.footerApropos{
-    height: 150px;
-    margin-left: 5%;
-}
-
-.footerNosHebergements{
-    height: 150px;
-}
-
-.footerAssistance{
-    height: 150px;
-    margin-right: 15px;
-}
-
-.footerlinksize{
-    height: 30px;
-}
-
-.footerlink{
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
-    height: 30px;
-} 
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/64f9bdf254.js" crossorigin="anonymous"></script>
+  <!--NORMALIZE CSS -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!--STYLE CSS BOOKI-->
+  <link rel="stylesheet" href="css/style.css" />
+  <!--GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
+    rel="stylesheet" />
+  <title>Booki</title>
+</head>
+
+<body>
+
+  <!-- header -->
+  <header>
+    <a href="#"><img src="images/logo/Booki.png" />
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#hebergement"> Hébergements</a></li>
+        <li><a href="#activités">Activités </a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- Main -->
+  <main>
+
+    <!-- Section 1 -->
+    <section>
+      <div>
+        <h1>Trouver votre logement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+      </div>
+    </section>
+
+    <section>
+      <form class="left" action="index.html" method="post">
+        <div>
+          <i class="icons fa-solid fa-location-dot"></i>
+        </div>
+        <div>
+          <input class="searchzone" type="search" placeholder="Marseille,France" />
+        </div>
+        <div class="button-search"><span> Recherche </span></div>
+      </form>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="filtres">
+      <h3>Filtres</h3>
+      <!-- <div> -->
+      <span class="filtre">
+        <i class="fas fa-money-bill-wave fa-lg filtre-icons"></i>
+        <i>Économique</i>
+      </span>
+
+
+      <span class="filtre ">
+        <i class="fas fa-child fa-lg filtre-icons"></i>
+        <i>Familiales</i>
+      </span>
+
+
+      <span class="filtre">
+        <i class="fas fa-heart fa-lg filtre-icons"></i>
+        <i>Romantiques</i>
+      </span>
+
+
+      <span class="filtre">
+        <i class="fas fa-dog fa-lg filtre-icons"></i>
+        <i>Animaux autorisés</i>
+      </span>
+
+      <!-- </div> -->
+    </section>
+
+    <span class="info">
+      <i class="fa-solid fa-info infoicons"></i>
+      Plus de 500 logements sont disponibles dans cette ville
+    </span>
+
+    <section class="hebergements-marseille-les-plus-populaires">
+
+      <div class="hebergements-marseille-les-plus-populaires-card hebergements-marseille">
+
+        <h2>Hébergements à Marseille</h2>
+
+        <div class="hebergements-marseille-cards">
+
+          <a href="#" class="hebergements-marseille-card">
+
+            <div class="hebergements-marseille-card-img">
+
+              <img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
+
+            </div>
+
+            <div class="hebergements-marseille-card-details">
+
+              <h3 class="hebergements-marseille-card-title">Auberge La Cannebière</h3>
+
+              <p class="hebergements-marseille-card-description">
+                Nuit à partir de
+                <span class="hebergements-marseille-card-price">25</span>
+                <span class="hebergements-marseille-card-devise">€</span>
+              </p>
+
+              <p class="hebergements-marseille-card-ranks">
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorgrey"></i>
+
+              </p>
+
+            </div>
+
+          </a>
+
+          <a href="#" class="hebergements-marseille-card">
+
+            <div class="hebergements-marseille-card-img">
+
+              <img src="images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+
+            </div>
+
+            <div class="hebergements-marseille-card-details">
+
+              <h3 class="hebergements-marseille-card-title">Hôtel du port</h3>
+
+              <p class="hebergements-marseille-card-description">
+                Nuit à partir de
+                <span>52</span>
+                <span class="hebergements-marseille-card-devise">€</span>
+              </p>
+
+              <p class="hebergements-marseille-card-ranks">
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+              </p>
+
+            </div>
+
+          </a>
+
+          <a href="#" class="hebergements-marseille-card">
+
+            <div class="hebergements-marseille-card-img">
+
+              <img src="images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
+
+            </div>
+
+            <div class="hebergements-marseille-card-details">
+
+              <h3 class="hebergements-marseille-card-title">Hôtel Les mouettes</h3>
+
+              <p class="hebergements-marseille-card-description">
+                Nuit à partir de
+                <span>76</span>
+                <span class="hebergements-marseille-card-devise">€</span>
+              </p>
+
+              <p class="hebergements-marseille-card-ranks">
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorgrey"></i>
+
+              </p>
+
+            </div>
+
+          </a>
+
+          <a href="#" class="hebergements-marseille-card">
+
+            <div class="hebergements-marseille-card-img">
+
+              <img src="images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+
+            </div>
+
+            <div class="hebergements-marseille-card-details">
+
+              <h3 class="hebergements-marseille-card-title">Hôtel de la mer</h3>
+
+              <p class="hebergements-marseille-card-description">
+                Nuit à partir de
+                <span>46</span>
+                <span class="hebergements-marseille-card-devise">€</span>
+              </p>
+
+              <p class="hebergements-marseille-card-ranks">
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorgrey"></i>
+
+                <i class="fa-solid fa-star colorgrey"></i>
+
+              </p>
+
+            </div>
+
+          </a>
+
+          <a href="#" class="hebergements-marseille-card">
+
+            <div class="hebergements-marseille-card-img">
+
+              <img src="images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
+
+            </div>
+
+            <div class="hebergements-marseille-card-details">
+
+              <h3 class="hebergements-marseille-card-title">Auberge Le Panier</h3>
+
+              <p class="hebergements-marseille-card-description">
+                Nuit à partir de
+                <span class="hebergements-marseille-card-price">23</span>
+                <span class="hebergements-marseille-card-devise">€</span>
+              </p>
+
+              <p class="hebergements-marseille-card-ranks">
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorgrey"></i>
+
+              </p>
+
+            </div>
+
+          </a>
+
+          <a href="#" class="hebergements-marseille-card">
+
+            <div class="hebergements-marseille-card-img">
+
+              <img src="images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
+
+            </div>
+
+            <div class="hebergements-marseille-card-details">
+
+              <h3 class="hebergements-marseille-card-title">Hôtel chez Amina</h3>
+
+              <p class="hebergements-marseille-card-description">
+                Nuit à partir de
+                <span>96</span>
+                <span class="hebergements-marseille-card-devise">€</span>
+              </p>
+
+              <p class="hebergements-marseille-card-ranks">
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+                <i class="fa-solid fa-star colorblue"></i>
+
+              </p>
+
+            </div>
+
+          </a>
+
+        </div>
+          <a href="#" class="Afficher-plus">Afficher plus </a>
+      </div>
+
+      <div class="hebergements-marseille-les-plus-populaires-card les-plus-populaires"> 
+
+        <h2>Les plus populaires <i class="fa-solid fa-star"></i> </h2>
+        <a href="#" class="les-plus-populaires-card">
+
+          <div class="les-plus-populaires-card-img">
+
+            <img src="images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
+
+          </div>
+
+          <div class="les-plus-populaires-card-details">
+
+            <h3 class="les-plus-populaires-card-title">Hôtel Le solei du matin</h3>
+
+            <p class="les-plus-populaires-card-description">
+              Nuit à partir de
+              <span>128</span>
+              <span class="les-plus-populaires-card-devise">€</span>
+            </p>
+
+            <p class="les-plus-populaires-card-ranks">
+
+              <i class="fa-solid fa-star colorblue"></i>
+
+              <i class="fa-solid fa-star colorblue"></i>
+
+              <i class="fa-solid fa-star colorblue"></i>
+
+              <i class="fa-solid fa-star colorblue"></i>
+
+              <i class="fa-solid fa-star colorblue"></i>
+
+            </p>
+
+          </div>
+
+        </a>
+
+        <a href="#" class="les-plus-populaires-card">
+
+          <div class="les-plus-populaires-card-img">
+
+            <img src="images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambre d'hôtes">
+
+          </div>
+
+          <div class="les-plus-populaires-card-details">
+
+            <h3 class="les-plus-populaires-card-title">Au coeur de l'eau Chambre d'hôtes</h3>
+
+            <p class="les-plus-populaires-card-description">
+              Nuit à partir de
+              <span>71</span>
+              <span class="les-plus-populaires-card-devise">€</span>
+            </p>
+
+            <p class="les-plus-populaires-card-ranks">
+
+              <i class="fa-solid fa-star colorblue"></i>
+
+              <i class="fa-solid fa-star colorblue"></i>
+
+              <i class="fa-solid fa-star colorblue"></i>
+
+              <i class="fa-solid fa-star colorblue"></i>
+
+              <i class="fa-solid fa-star colorgrey"></i>
+
+            </p>
+
+          </div>
+
+        </a>
+
+        <a href="#" class="les-plus-populaires-card">
+
+          <div class="les-plus-populaires-card-img">
+
+            <img src="images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tous bleu et Blanc">
+
+          </div>
+
+          <div class="les-plus-populaires-card-details">
+
+            <h3 class="les-plus-populaires-card-title">Hôtel Tous bleu et Blanc</h3>
+
+            <p class="les-plus-populaires-card-description">
+              Nuit à partir de
+              <span>68</span>
+              <span class="les-plus-populaires-card-devise">€</span>
+            </p>
+
+            <p class="les-plus-populaires-card-ranks">
+
+              <i class="fa-solid fa-star colorblue"></i>
+
+              <i class="fa-solid fa-star colorblue"></i>
+
+              <i class="fa-solid fa-star colorblue"></i>
+
+              <i class="fa-solid fa-star colorblue"></i>
+
+              <i class="fa-solid fa-star colorgrey"></i>
+
+            </p>
+
+          </div>
+
+        </a>
+      </div>
+
+    </section>
+      <section>
+
+        <h2> Activités à Marseille</h2>
+  
+        <div class="activites-marseille">
+  
+          <div class="colonne-activite-marseille">
+  
+            <a href="#" class="activite-marseille-card-row-1">
+  
+              <div class="activite-marseille-card-img">
+  
+                <img src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
+  
+              </div>
+  
+              <div class="activite-marseille-card-details">
+  
+                <h3>Vieux Port</h3>
+  
+              </div>
+  
+            </a>
+  
+          </div>
+  
+          <div class="colonne-activite-marseille">
+  
+            <a href="#" class="activite-marseille-card-row-2">
+  
+              <div class="activite-marseille-card-img">
+  
+                <img src="./images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+  
+              </div>
+  
+              <div class="activite-marseille-card-details">
+  
+                <h3>Fort de Pomègues</h3>
+  
+              </div>
+  
+            </a>
+  
+            <a href="#" class="activite-marseille-card-row-3">
+  
+              <div class="activite-marseille-card-img">
+  
+                <img src="images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Ile de Frioul">
+  
+              </div>
+  
+              <div class="activite-marseille-card-details">
+  
+                <h3>Ile de Frioul</h3>
+  
+              </div>
+  
+            </a>
+  
+          </div>
+  
+          <div class="colonne-activite-marseille">
+  
+            <a href="#" class="activite-marseille-card-row-1">
+  
+              <div class="activite-marseille-card-img">
+  
+                <img src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+  
+              </div>
+  
+              <div class="activite-marseille-card-details">
+  
+                <h3>Parc National des Calanques</h3>
+  
+              </div>
+  
+            </a>
+  
+          </div>
+  
+          <div class="colonne-activite-marseille">
+  
+            <a href="#" class="activite-marseille-card-row-3">
+  
+              <div class="activite-marseille-card-img">
+  
+                <img src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+  
+              </div>
+  
+              <div class="activite-marseille-card-details">
+  
+                <h3>Notre-Dame-de-la-Garde</h3>
+  
+              </div>
+  
+            </a>
+  
+            <a href="#" class="activite-marseille-card-row-2">
+  
+              <div class="activite-marseille-card-img">
+  
+                <img src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc longchamps">
+  
+              </div>
+  
+              <div class="activite-marseille-card-details">
+  
+                <h3>Parc Longchamps</h3>
+  
+              </div>
+  
+            </a>
+  
+          </div>
+        </section>
+  </main>
+
+  <footer>  
+      <div class="footer">
+        <div class="footerApropos">
+          <h3>À propos</h3>
+          <div class="footerLinksize">
+            <a href="#" class="footerlink"> Fontionnement du site </a><br />
+            <a href="#" class="footerlink"> Conditions générales de ventes</a
+            ><br />
+            <a href="#" class="footerlink"> Données et confidentialités </a
+            ><br />
+          </div>
+        </div>
+
+        <div class="footerNosHebergements">
+          <h3>Nos hébergements</h3>
+          <div class="footerLinksize">
+            <a href="#" class="footerlink"> Chartes qualités </a> <br />
+            <a href="#" class="footerlink"> Soumettre votre hôtel</a><br />
+          </div>
+        </div>
+
+        <div class="footerAssistance">
+          <h3>Assistance</h3>
+          <div class="footerLinksize">
+            <a href="#" class="footerlink"> Centre d'aide </a><br />
+            <a href="#" class="footerlink"> Nous contacter</a><br />
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>
+
