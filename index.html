@@ -24,16 +24,16 @@
 
   <!-- header -->
   <header>
-    <a href="#"><img src="images/logo/Booki.png" />
+    <a href="#">
+      <img src="images/logo/Booki@3x.png" />
     </a>
     <nav>
       <ul>
         <li><a href="#hebergement"> Hébergements</a></li>
-        <li><a href="#activités">Activités </a></li>
+        <li><a href="#activites">Activités </a></li>
       </ul>
     </nav>
   </header>
-
 
   <!-- Main -->
   <main>
@@ -47,14 +47,15 @@
     </section>
 
     <section>
-      <form class="left" action="index.html" method="post">
+      <form class="left" action="index.html">
         <div>
           <i class="icons fa-solid fa-location-dot"></i>
         </div>
         <div>
-          <input class="searchzone" type="search" placeholder="Marseille,France" />
+          <input class="searchzone" type="search" placeholder="Marseille,France" name="vile"/>
         </div>
-        <div class="button-search"><span> Recherche </span></div>
+        <button type="submit" class="button-search">Recherche</button>
+        <!-- <div class="button-search"><span> Recherche </span></div> -->
       </form>
     </section>
 
@@ -95,7 +96,7 @@
 
     <section class="hebergements-marseille-les-plus-populaires">
 
-      <div class="hebergements-marseille-les-plus-populaires-card hebergements-marseille">
+      <div id="hebergement" class="hebergements-marseille-les-plus-populaires-card hebergements-marseille">
 
         <h2>Hébergements à Marseille</h2>
 
@@ -318,10 +319,10 @@
           </a>
 
         </div>
-          <a href="#" class="Afficher-plus">Afficher plus </a>
+        <a href="#" class="afficher-plus">Afficher plus </a>
       </div>
 
-      <div class="hebergements-marseille-les-plus-populaires-card les-plus-populaires"> 
+      <div class="hebergements-marseille-les-plus-populaires-card les-plus-populaires">
 
         <h2>Les plus populaires <i class="fa-solid fa-star"></i> </h2>
         <a href="#" class="les-plus-populaires-card">
@@ -434,157 +435,155 @@
       </div>
 
     </section>
-      <section>
 
-        <h2> Activités à Marseille</h2>
-  
-        <div class="activites-marseille">
-  
-          <div class="colonne-activite-marseille">
-  
-            <a href="#" class="activite-marseille-card-row-1">
-  
-              <div class="activite-marseille-card-img">
-  
-                <img src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
-  
-              </div>
-  
-              <div class="activite-marseille-card-details">
-  
-                <h3>Vieux Port</h3>
-  
-              </div>
-  
-            </a>
-  
-          </div>
-  
-          <div class="colonne-activite-marseille">
-  
-            <a href="#" class="activite-marseille-card-row-2">
-  
-              <div class="activite-marseille-card-img">
-  
-                <img src="./images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-  
-              </div>
-  
-              <div class="activite-marseille-card-details">
-  
-                <h3>Fort de Pomègues</h3>
-  
-              </div>
-  
-            </a>
-  
-            <a href="#" class="activite-marseille-card-row-3">
-  
-              <div class="activite-marseille-card-img">
-  
-                <img src="images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Ile de Frioul">
-  
-              </div>
-  
-              <div class="activite-marseille-card-details">
-  
-                <h3>Ile de Frioul</h3>
-  
-              </div>
-  
-            </a>
-  
-          </div>
-  
-          <div class="colonne-activite-marseille">
-  
-            <a href="#" class="activite-marseille-card-row-1">
-  
-              <div class="activite-marseille-card-img">
-  
-                <img src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-  
-              </div>
-  
-              <div class="activite-marseille-card-details">
-  
-                <h3>Parc National des Calanques</h3>
-  
-              </div>
-  
-            </a>
-  
-          </div>
-  
-          <div class="colonne-activite-marseille">
-  
-            <a href="#" class="activite-marseille-card-row-3">
-  
-              <div class="activite-marseille-card-img">
-  
-                <img src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-  
-              </div>
-  
-              <div class="activite-marseille-card-details">
-  
-                <h3>Notre-Dame-de-la-Garde</h3>
-  
-              </div>
-  
-            </a>
-  
-            <a href="#" class="activite-marseille-card-row-2">
-  
-              <div class="activite-marseille-card-img">
-  
-                <img src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc longchamps">
-  
-              </div>
-  
-              <div class="activite-marseille-card-details">
-  
-                <h3>Parc Longchamps</h3>
-  
-              </div>
-  
-            </a>
-  
-          </div>
-        </section>
+    <section id="activites">
+
+      <h2> Activités à Marseille</h2>
+
+      <div class="activites-marseille">
+
+        <div class="colonne-activite-marseille">
+
+          <a href="#" class="activite-marseille-card-row-1">
+
+            <div class="activite-marseille-card-img">
+
+              <img src="images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
+
+            </div>
+
+            <div class="activite-marseille-card-details">
+
+              <h3>Vieux Port</h3>
+
+            </div>
+
+          </a>
+
+        </div>
+
+        <div class="colonne-activite-marseille">
+
+          <a href="#" class="activite-marseille-card-row-2">
+
+            <div class="activite-marseille-card-img">
+
+              <img src="./images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+
+            </div>
+
+            <div class="activite-marseille-card-details">
+
+              <h3>Fort de Pomègues</h3>
+
+            </div>
+
+          </a>
+
+          <a href="#" class="activite-marseille-card-row-3">
+
+            <div class="activite-marseille-card-img">
+
+              <img src="images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Ile de Frioul">
+
+            </div>
+
+            <div class="activite-marseille-card-details">
+
+              <h3>Ile de Frioul</h3>
+
+            </div>
+
+          </a>
+
+        </div>
+
+        <div class="colonne-activite-marseille">
+
+          <a href="#" class="activite-marseille-card-row-1">
+
+            <div class="activite-marseille-card-img">
+
+              <img src="images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+
+            </div>
+
+            <div class="activite-marseille-card-details">
+
+              <h3>Parc National des Calanques</h3>
+
+            </div>
+
+          </a>
+
+        </div>
+
+        <div class="colonne-activite-marseille">
+
+          <a href="#" class="activite-marseille-card-row-3">
+
+            <div class="activite-marseille-card-img">
+
+              <img src="images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+
+            </div>
+
+            <div class="activite-marseille-card-details">
+
+              <h3>Notre-Dame-de-la-Garde</h3>
+
+            </div>
+
+          </a>
+
+          <a href="#" class="activite-marseille-card-row-2">
+
+            <div class="activite-marseille-card-img">
+
+              <img src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc longchamps">
+
+            </div>
+
+            <div class="activite-marseille-card-details">
+
+              <h3>Parc Longchamps</h3>
+
+            </div>
+
+          </a>
+
+        </div>
+    </section>
+
   </main>
 
-  <footer>  
-      <div class="footer">
-        <div class="footerApropos">
-          <h3>À propos</h3>
-          <div class="footerLinksize">
-            <a href="#" class="footerlink"> Fontionnement du site </a><br />
-            <a href="#" class="footerlink"> Conditions générales de ventes</a
-            ><br />
-            <a href="#" class="footerlink"> Données et confidentialités </a
-            ><br />
-          </div>
-        </div>
+  <footer>
+    <div class="footerBlock">
+      <h3>À propos</h3>
+      <ul>
+        <li><a href="#" class="footerlink">Fontionnement du site</a></li>
+        <li><a href="#" class="footerlink">Conditions générales de ventes</a></li>
+        <li><a href="#" class="footerlink">Données et confidentialités </a></li>
+      </ul>
+    </div>
 
-        <div class="footerNosHebergements">
-          <h3>Nos hébergements</h3>
-          <div class="footerLinksize">
-            <a href="#" class="footerlink"> Chartes qualités </a> <br />
-            <a href="#" class="footerlink"> Soumettre votre hôtel</a><br />
-          </div>
-        </div>
+    <div class="footerBlock">
+      <h3>Nos hébergements</h3>
+      <ul>
+        <li><a href="#" class="footerlink">Chartes qualités</a></li>
+        <li><a href="#" class="footerlink">Soumettre votre hôtel</a></li>
+      </ul>
+    </div>
 
-        <div class="footerAssistance">
-          <h3>Assistance</h3>
-          <div class="footerLinksize">
-            <a href="#" class="footerlink"> Centre d'aide </a><br />
-            <a href="#" class="footerlink"> Nous contacter</a><br />
-          </div>
-        </div>
-      </div>
-    </footer>
+    <div class="footerBlock">
+      <h3>Assistance</h3>
+      <ul>
+        <li><a href="#" class="footerlink">Centre d'aide</a></li>
+        <li><a href="#" class="footerlink">Nous contacter</a></li>
+      </ul>
+    </div>
+  </footer>
+
 </body>
 
 </html>
-
