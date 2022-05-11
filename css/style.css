@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family:'Raleway', sans-serif;
     
@@ -9,9 +13,7 @@ header{
     align-items: center;
     width: 85%;
     margin: auto;
-    scroll-behavior: smooth;
 }
-
 
 header img {
     width: 50%;
@@ -23,13 +25,16 @@ header nav ul {
     list-style-type: none;
 }
 
+header nav ul li{
+    margin: 3%;
+}
+
 header nav ul li a{
     color: black;
     text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 25px;
-    font-weight: 500;
 }
 
 header nav ul li a:hover{
@@ -41,11 +46,12 @@ header nav ul li a:hover{
 main{
     width: 90%;
     margin: auto;
+    margin-bottom: 3%;
 }
 
 /* Section 1 */
 section h1{
-    font-size: 24px;
+    font-size: 25px;
 }
 
 .left{
@@ -60,7 +66,7 @@ section h1{
     align-items: center;
     height: 50px;
     width: 50px;
-    border-radius: 10px 0 0 10px;
+    border-radius: 15px 0px 0px 15px;
     background-color: #f2f2f2;
 }
 
@@ -93,7 +99,9 @@ section h1{
     height: 50px;
     width: 120px;
     cursor: pointer;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+    font-weight: bold;
 
 }
 .button-search:hover{
@@ -113,20 +121,20 @@ section h3{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-top: 2%;
     margin-right: 20%;
+    font-weight: bold;
 }
 
 .filtre{
     border: 4px solid #f2f2f2;
     border-radius: 30px;
     display: flex;
-    padding: 10px 0px 10px 0px ;
-    margin-right: 20px;
+    padding: 10px 25px 10px 0px;
+    margin-right: 5%;
     align-items: center;
-    height: 15px;
-    padding-right: 20px;
+    height: 25px;
     cursor: pointer;
 }
 
@@ -141,22 +149,18 @@ section h3{
 } 
 
 .filtre-icons{
-    /* height: 50px; */
-    height: 20px;
-    padding: 10px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: #0065fc;
-    background-color: #deebff;
-    border-radius: 25px;
-    margin-left: -5px;
-    width: 20px;
-}
-.filtre-icons:hover{
-    color: white;
-    background-color: #0065fc;
+      height: 25px;
+      padding: 15px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      color: #0065fc;
+      background-color: #deebff;
+      border-radius: 30px;
+      margin-left: -5px;
+      width: 25px;
+      margin-right: 15px;
 }
 
 .infoicons{
@@ -185,6 +189,7 @@ section h3{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 5%;
 }
 
 .hebergements-marseille-les-plus-populaires-card{
@@ -269,12 +274,18 @@ color: #0065FC;
 color: #deebff;
 }
 /* Afficher plus */
-.Afficher-plus{
+.afficher-plus{
     text-decoration: none;
     color: black;
     font-weight: bold;
     font-size: 18px;
 }
+
+.afficher-plus:hover{
+    text-decoration: underline;
+    color: #0065FC;
+}
+
 /* Les plus populaires */
 .les-plus-populaires{
     width: 25%;
@@ -473,52 +484,93 @@ color: #deebff;
 }
 
 /* footer */
-.footer{
+footer{
     background-color: #f2f2f2;
-}
-
-.footer-lien{
-    text-decoration: none;
-    color:grey;    
-}
-.footer-liens{
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    
-}
-
-
-.footer{
-    display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    height: 300px;
-    margin-top: 100px;
     background-color: #f2f2f2;
+    padding: 2% 0;
 }
 
-.footerApropos{
-    height: 150px;
+.footerBlock{
     margin-left: 5%;
+    margin-right: 10%;
 }
 
-.footerNosHebergements{
-    height: 150px;
+.footerBlock ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
 }
 
-.footerAssistance{
-    height: 150px;
-    margin-right: 15px;
-}
-
-.footerlinksize{
-    height: 30px;
-}
-
-.footerlink{
+.footerBlock ul li{
     list-style-type: none;
+    margin-bottom: 5%;
+}
+
+.footerBlock ul li a{ 
     text-decoration: none;
     color: black;
-    height: 30px;
-} 
+}
+
+.footerBlock ul li a:hover{ 
+    text-decoration: underline;
+    color: #0065FC;
+}
+
+/* TABLETTE */
+@media (max-width: 992px) {
+
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header a{
+        text-align: center;
+    }
+
+    header nav{
+        width: 100%;
+        /* border-bottom: 5px solid #f2f2f2; */
+    }
+
+    header nav ul{
+        width: 100%;
+        margin-block-start: 0;
+        margin-block-end: 16px;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        padding-inline-start: 0;
+    }
+
+    header nav ul li{
+        width: 50%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header nav ul li a{
+        color: black;
+        text-decoration: none;
+        padding-left: 0;
+        padding-right: 0; 
+        padding-top: 0;
+        padding-bottom: 16px;
+        border-bottom: 5px solid #f2f2f2;
+        width: 100%;
+    }
+
+    header nav ul li a:hover, header nav ul li a:active, header nav ul li a:focus{
+        border-top: none;
+        border-bottom: 5px solid #0065FC;
+    }
+}
