@@ -124,7 +124,7 @@ section h3{
 .filtres{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     /* justify-content: space-between; */
     margin-top: 2%;
     margin-right: 20%;
@@ -665,7 +665,6 @@ footer{
     }
     .hebergements-marseille-card-img{
         width: 101%;
-        
     }
     .hebergements-marseille-card-details{
         margin-left: 2%;
