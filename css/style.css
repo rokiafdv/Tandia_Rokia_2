@@ -671,6 +671,7 @@ h2{
 
     .les-plus-populaires {
         width: 90%;
+        background-color: #f2f2f2;
     }
     .hebergements-marseille-les-plus-populaires-card h2{
         font-size: 20px;
