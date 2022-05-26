@@ -531,7 +531,7 @@ footer{
 @media (max-width: 992px) {
 /* hebergement a marseille */
     .hebergements-marseille{
-    width: 66%;
+    width: 100%;
 }
 .hebergements-marseille-card{
     width: 45%;
@@ -549,7 +549,7 @@ footer{
 }
 /* les plus populaires */
 .les-plus-populaires{
-    width: 65%;
+    width: 100%;
     background-color: white;
     border: #f2f2f2 solid 4px;
 }
@@ -562,13 +562,17 @@ footer{
 }
 /* activites a marseille */
 .activites-marseille{
-    width: 70%;
+    width: 100%;
 }
 h2{
     margin-left: 20%;
 }
 .colonne-activite-marseille{
     width: 45%;
+}
+/* footer */
+.footerBlock{
+    flex-direction: ;
 }
 }
 /* MOBILE */
