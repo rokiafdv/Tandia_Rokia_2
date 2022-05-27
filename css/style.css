@@ -124,7 +124,7 @@ section h3{
 .filtres{
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
+    align-items: center;
     /* justify-content: space-between; */
     margin-top: 2%;
     margin-right: 20%;
@@ -529,52 +529,9 @@ footer{
 
 /* TABLETTE */
 @media (max-width: 992px) {
-/* hebergement a marseille */
-    .hebergements-marseille{
-    width: 100%;
+
 }
-.hebergements-marseille-card{
-    width: 45%;
-}
-.hebergements-marseille h2{
-    display: flex;
-    justify-content: center;
-}
-.hebergements-marseille-les-plus-populaires{
-    flex-direction: column-reverse;
-}
-.afficher-plus{
-    display: flex;
-    justify-content: center;
-}
-/* les plus populaires */
-.les-plus-populaires{
-    width: 100%;
-    background-color: white;
-    border: #f2f2f2 solid 4px;
-}
-.les-plus-populaires h2{
-   display: flex;
-   justify-content: center;
-}
-.fa-solid, .fas {
-    margin-left: 5%;
-}
-/* activites a marseille */
-.activites-marseille{
-    width: 100%;
-}
-h2{
-    margin-left: 20%;
-}
-.colonne-activite-marseille{
-    width: 45%;
-}
-/* footer */
-.footerBlock{
-    flex-direction: ;
-}
-}
+
 /* MOBILE */
 @media (max-width: 768px) {
     header {
@@ -675,10 +632,6 @@ h2{
 
     .les-plus-populaires {
         width: 90%;
-        background-color: #f2f2f2;
-    }
-    .hebergements-marseille-les-plus-populaires-card h2{
-        font-size: 20px;
     }
 
     .hebergements-marseille-les-plus-populaires-card{
@@ -691,82 +644,4 @@ h2{
         margin-bottom: 5%;
     }
 
-    .hebergements-marseille{
-        background-color: white;
-    }
-
-        .hebergements-marseille-cards {
-        flex-direction: column;
-        width: 110%;
-    
-    }
-    
-    .hebergements-marseille-card {
-       width: 120%;
-        margin-left: 3%;
-        box-shadow: 2px 2px 2px 2px #f2f2f2;
-        border-radius: 25px;
-    }
-    .hebergements-marseille-card-img{
-        width: 101%;
-    }
-    .hebergements-marseille-card-details{
-        margin-left: 2%;
-    }
-    .afficher-plus{
-        font-size: 19px;
-        margin-top: 20px;
-    }
-    /* Activités a marseille */  
-   
-    h2{
-        font-size: 25px;
-        margin-left: 5%;
-    }
-    .activites-marseille{
-        flex-direction: column;
-        margin-left: 4%;
-    }
-    .colonne-activite-marseille{
-     width: 95%;
-    }
-    .activite-marseille-card-row-1{
-        height: 70%;
-    }
-    .activite-marseille-card-row-1 .activite-marseille-card-img{
-        width: 100%;
-        height: 80%;
-    }
-   .activite-marseille-card-row-1 .activite-marseille-card-details{
-       height: 20%;
-   }
-    .activite-marseille-card-row-2{
-        margin-top: -15%;
-        box-shadow: 2px 2px 2px 2px #f2f2f2;
-        border-radius: 25px;
-    }
-    .activite-marseille-card-row-2 .activite-marseille-card-img{
-        height: 80%;
-    }
-    .activite-marseille-card-row-2 .activite-marseille-card-details{
-       height: 20%;
-    }
-    .activite-marseille-card-row-3{
-        margin-bottom: 3%;
-    }
-    .activite-marseille-card-row-3 .activite-marseille-card-img{
-      height: 100%;
-      margin-top: -15%;
-    }
-    .activite-marseille-card-row-3 .activite-marseille-card-details{
-        padding-top: 5%;
-    }
-     /* footer */
-     footer{
-     flex-direction: column;
-     display: block;
-     }
- 
 }
-
-
